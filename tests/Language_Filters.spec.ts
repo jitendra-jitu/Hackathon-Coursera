@@ -25,7 +25,7 @@ test.afterAll(async () => {
   Logger.log('Scenario finished2');
 });
 
-test('Filters: open and count languages', async () => {
+test('@sanity Filters: open and count languages', async () => {
   await home.goto();
   await home.searchCourse('Language Learning');
   await searchPage.openLanguageFilter();
@@ -36,7 +36,7 @@ test('Filters: open and count languages', async () => {
 
 
 
-test('Filters: iterate languages 0-4 and list levels', async () => {
+test('@sanity Filters: iterate languages 0-4 and list levels', async () => {
   const languageOptions = await searchPage.getLanguageOptions();
   const count = await languageOptions.count();
   Logger.log(`Available language filters: ${count}`);

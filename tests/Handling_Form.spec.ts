@@ -24,7 +24,7 @@ test.afterAll(async () => {
   Logger.log('Scenario finished3');
 });
 
-test('University: open and submit form', async () => {
+test('@smoke University: open and submit form', async () => {
   await home.goto();
   await home.openForUniversities();
   await formPage.fillForm();
@@ -32,7 +32,7 @@ test('University: open and submit form', async () => {
   Logger.log(msg);
 });
 
-test('University: re-submit and validate error', async () => {
+test('@smoke University: re-submit and validate error', async () => {
   await formPage.fillForm();
   const msg = (await formPage.getErrorMessage()) ?? '';
   Logger.log(msg);

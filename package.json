@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test:sanity": "npx playwright test -g sanity",
-    "test:smoke": "npx playwright test -g smoke",
-    "test:regression": "npx playwright test"
+
+    "scripts": {
+      "sanity:test":"npx playwright test -g sanity",
+      "smoke:test":"npx playwright test -g smoke",
+      "regression:test":"npx playwright test"
   },
   "keywords": [],
   "author": "",
